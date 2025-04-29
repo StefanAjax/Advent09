@@ -135,6 +135,7 @@ namespace Advent09
                         //4             x           x       x   x
                         // Should only recalculate the sums that are affected by the new item
                         // If neccesary, do that. Indexing is big brain stuff so here I just clear the list and recalulate all
+                        // Idea: use a hashset to stor the sums and identify outgoing numbers.
                         PossibleSums.Clear();
                         for (int i = 0; i < Capacity; i++)
                         {
